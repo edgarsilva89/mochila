@@ -1,0 +1,74 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+header #header-title {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav .nav-item{
+    color: white;
+    transition: all 1s;
+}
+
+header nav .nav-item:hover {
+    color: gray;
+    transform: scale(1.2);
+}
+main #elemento{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+
+
+
+
+    animation-name: animacao-elemento;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes animacao-elemento {
+    0% {
+        background-color: green;
+        left: 0px;
+    }
+    50% {
+        background-color: purple;
+        left: 500px;
+        transform: rotate(180deg);
+    }
+    100% {
+        background-color: black;
+        left: 0px;
+    }
+}
